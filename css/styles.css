@@ -127,28 +127,12 @@
 }
 
 .contacts-list-item {
-  display: flex;
+ /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;   */
 }
 
-.contacts-header-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-}
 
-.contacts-list-item:hover .icon-header {
-  fill: var(--accent-txt-cl);
-}
-
-.contacts-list-item:hover .contacts-link {
-  color: var(--accent-txt-cl);
-}
-
-.icon-header {
-}
 
 .contacts-link {
   font-weight: 500;
@@ -157,6 +141,19 @@
   letter-spacing: 0.02em;
   color: var(--gray-txt-cl);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.icon-header {
+  margin-right: 10px;
+}
+
+
+.contacts-link:hover .icon-header,
+.contacts-link:focus .icon-header {
+  fill: var(--accent-txt-cl);
 }
 
 .contacts-link:hover,
@@ -205,6 +202,12 @@
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
   cursor: pointer;
+  padding-top: 7px;
+  padding-right: 25px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+  border: none;
+  border-radius: 4px;
 }
 
 .characteristic {
@@ -371,7 +374,8 @@
   fill: #afb1b8;
 }
 
-.socials-link:hover .icon-team {
+.socials-link:hover .icon-team,
+.socials-link:focus .icon-team {
   fill: #ffffff;
 }
 
@@ -401,24 +405,36 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.clients-item {
-  outline: 1px solid #afb1b8;
+.clients-icon-link {
+  display: block;
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-icon {
   fill: #afb1b8;
 }
 
-.clients-icon-link:hover .clients-icon:hover {
+.clients-icon-link:hover .clients-icon,
+.clients-icon-link:focus .clients-icon {
   fill: var(--accent-txt-cl);
 }
 
-.clients-item:hover {
-  outline: 1px solid var(--accent-txt-cl);
+.clients-icon-link:hover,
+.clients-icon-link:focus {
+  border-color: var(--accent-txt-cl);
 }
+
+
 
 /* footer */
 
@@ -430,6 +446,7 @@
 
 .footer-section {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -487,7 +504,6 @@ address {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
-  margin-top: 10px;
   margin-bottom: 20px;
   color: #ffffff;
 }
@@ -497,6 +513,7 @@ address {
   gap: 10px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-socials-link {
