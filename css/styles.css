@@ -504,6 +504,7 @@ address {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
+  margin-top: 0;
   margin-bottom: 20px;
   color: #ffffff;
 }
